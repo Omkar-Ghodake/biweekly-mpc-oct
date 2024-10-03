@@ -6,7 +6,7 @@ export default {
       fontFamily: {
         mars: ['Mars', 'sans-serif'],
         automata: ['Automata', 'sans-serif'],
-        // Add more custom font families as needed
+        batman: ['Batman', 'sans-serif'],
       },
     },
   },

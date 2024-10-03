@@ -1,9 +1,19 @@
-import { StrictMode } from 'react'
+import { Fragment, StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import {
+  createBrowserRouter,
+  RouterProvider,
+  BrowserRouter,
+  Route,
+  Routes,
+} from 'react-router-dom'
 import App from './App.jsx'
 import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Navbar from './layouts/Navbar.jsx'
+import Activities from './pages/Activities.jsx'
 import Intro from './pages/Intro.jsx'
+import Score from './pages/Score.jsx'
+import Graph from './pages/Graph.jsx'
 
 const router = createBrowserRouter([
   {
@@ -14,10 +24,34 @@ const router = createBrowserRouter([
     path: '/intro',
     element: <Intro />,
   },
+  {
+    path: '/activities',
+    element: <Activities />,
+  },
+  {
+    path: '/score',
+    element: <Score />,
+  },
+  {
+    path: '/graph',
+    element: <Graph />,
+  },
 ])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<App />} />
+        <Route path='/intro' element={<Intro />} />
+        <Route path='/activities' element={<Activities />} />
+        <Route path='/score' element={<Score />} />
+        <Route path='/graph' element={<Graph />} />
+      </Routes>
+    </BrowserRouter>
+
+    {/* <Navbar />
+    <RouterProvider router={router} /> */}
   </StrictMode>
 )

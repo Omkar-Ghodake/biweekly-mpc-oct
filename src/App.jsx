@@ -2,14 +2,12 @@ import { Link } from 'react-router-dom'
 import './App.css'
 import bgVideo from './assets/start_bg.mp4'
 import { motion } from 'framer-motion'
+import BgVideo from './components/BgVideo'
 function App() {
   return (
     <>
       <div className=''>
-        <video className='absolute -z-50 bg-video object-cover' muted autoPlay>
-          <source src={bgVideo} type='video/mp4' />
-          Video not supported
-        </video>
+        <BgVideo videoSrc={bgVideo} />
 
         <Link to={'/intro'}>
           <motion.button

@@ -15,4 +15,8 @@
     font-family: 'Mars';
     src: url('./fonts/mars/Mars.ttf');
   }
+  @font-face {
+    font-family: 'Batman';
+    src: url('./fonts/batman_forever/batmfa__.ttf');
+  }
 }
