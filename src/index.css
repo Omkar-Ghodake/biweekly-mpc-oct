@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+} */
+
+@layer base {
+  @font-face {
+    font-family: 'Automata';
+    src: url('./fonts/automata/AUTOMATA-DISPLAY.ttf');
+  }
+  @font-face {
+    font-family: 'Mars';
+    src: url('./fonts/mars/Mars.ttf');
+  }
+}
