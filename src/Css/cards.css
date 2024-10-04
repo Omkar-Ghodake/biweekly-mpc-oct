@@ -1,0 +1,131 @@
+/* src/Card.css */
+
+.card {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    width: 300px;           /* Card width */
+    height: auto;          /* Card height */
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.1),      /* Base shadow */
+        0 0 10px rgba(33, 152, 231, 0.5);   /* Glow effect */
+        border: 3px solid rgba(9, 250, 238, 0.671);/* Semi-transparent border */
+        
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.2),         /* Shadow for depth */
+        0 0 20px rgba(21, 163, 251, 1),       /* Neon glow */
+        0 0 30px rgba(21, 163, 251, 0.8),     /* Stronger glow */
+        0 0 40px rgba(21, 163, 251, 0.6);   
+}
+
+
+.card-image {
+    width: 120px;                /* Image width */
+    height: 120px; 
+    margin-top: 25px;              /* Image height */
+    border-radius: 50%;          /* Circular image */
+    object-fit: cover;           /* Maintain aspect ratio */
+    position: relative;          /* Positioning for centering */
+    top: 25%;                    /* Move down 50% from the top */
+    left: 50%;                   /* Move right 50% from the left */
+    transform: translate(-50%, -50%); /* Center the image */
+    z-index: 2;                  /* Ensure it's above the background */
+    border: 3px solid rgb(228, 158, 7); 
+    margin-bottom: 50px;
+}
+
+.card-content {
+    padding: 5px;          /* Increased padding for content */
+    position: relative;      /* Ensure the content is positioned correctly */
+    z-index: 1;             /* Place content above the blurred background */
+}
+
+.card-body {
+    font-size: 1.2rem;      /* Larger font size for body text */
+    color: #fff;            /* White text for better contrast */
+}
+
+.card-author {
+    font-size: 1rem;        /* Larger font size for author text */
+    color: #ffffff;           /* White text for author */
+    /* font-weight: bold; */
+    font-family: Batman; 
+    
+    margin-bottom: 15px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    perspective: 1000px;
+}
+
+.column {
+    width: 48%; /* Adjust width as necessary */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center cards in the column */
+}
+
+/* Background image with blur effect */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;  /* Cover the entire card */
+    filter: blur(15px);      /* Blur the background image */
+    z-index: 0;              /* Place behind card content */
+}
+
+.divider {
+    border: none;              /* Remove default border */
+    border-top: 3px solid #15a3fb; /* Set the color and style of the underline */
+    margin: 10px 0;            /* Adjust spacing around the line */
+}
+
+.medal-container {
+    position: absolute;           /* Positioning for the medal */
+    top: 5px;                   /* Adjust top position */
+    left: 10%;                   /* Center horizontally */
+    transform: translateX(-50%); /* Centering correction */
+    z-index: 3;                  /* Ensure it's above the card content */
+}
+
+.medal {
+    width: 50px;                 /* Adjust size of the medal */
+    height: auto;                /* Maintain aspect ratio */
+}
+.emp-id {
+    position: absolute;           /* Positioning for the medal */
+    top: 2px;                   /* Adjust top position */
+    left: 75%;                   /* Center horizontally */
+    transform: translateX(-10%); /* Centering correction */
+    z-index: 3;                  /* Ensure it's above the card content */
+}
+.card {
+    position: relative;
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+    margin: 20px;
+    width: 300px; /* Card width */
+    height: 300px; /* Card height */
+    text-align: center;
+    background: transparent; /* Transparent background */
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.1), 
+        0 0 10px rgba(33, 152, 231, 0.5); /* Glow effect */
+}
+
+/* Create moving line around the outer border */
