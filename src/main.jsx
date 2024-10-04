@@ -14,6 +14,7 @@ import Activities from './pages/Activities.jsx'
 import Intro from './pages/Intro.jsx'
 import Cards from './pages/Cards.jsx'
 import Graph from './pages/Graph.jsx'
+import Score from './pages/Score.jsx'
 
 const router = createBrowserRouter([
   {
@@ -30,7 +31,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/score',
-    element: <Cards />,
+    element: <Score />,
   },
   {
     path: '/graph',
