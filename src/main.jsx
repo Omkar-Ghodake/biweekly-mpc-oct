@@ -12,7 +12,7 @@ import './index.css'
 import Navbar from './layouts/Navbar.jsx'
 import Activities from './pages/Activities.jsx'
 import Intro from './pages/Intro.jsx'
-import Score from './pages/Score.jsx'
+import Cards from './pages/Cards.jsx'
 import Graph from './pages/Graph.jsx'
 
 const router = createBrowserRouter([
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/score',
-    element: <Score />,
+    element: <Cards />,
   },
   {
     path: '/graph',
@@ -46,7 +46,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/' element={<App />} />
         <Route path='/intro' element={<Intro />} />
         <Route path='/activities' element={<Activities />} />
-        <Route path='/score' element={<Score />} />
+        <Route path='/score' element={<Cards />} />
         <Route path='/graph' element={<Graph />} />
       </Routes>
     </BrowserRouter>

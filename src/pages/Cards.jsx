@@ -1,7 +1,7 @@
 // src/Card.js
 
 import React from 'react';
-import '../Css/cards.css' // Import the CSS file for styling
+// import '../Css/cards.css' // Import the CSS file for styling
 // import { Carousel } from 'bootstrap';
 
 // import Row from 'bootstrap'
