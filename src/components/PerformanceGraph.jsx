@@ -12,7 +12,8 @@ class App extends Component {
             theme: "dark1",
             backgroundColor: "transparent", 
             title: {
-                text: "MPC Performance"
+                fontFamily : 'batman' ,
+                text: "MPC Performance",
             },
             axisX: {
                 title: "Names",
@@ -36,7 +37,7 @@ class App extends Component {
                     e.chart.render();
                 }
             },
-            data: [{lineColor: "red",},{
+            data: [{lineColor: "red"},{
                 type: "line",
                 name: "Previous Score",
                 showInLegend: true,
@@ -69,6 +70,7 @@ class App extends Component {
                 type: "line",
                 name: "Current Score",
                 showInLegend: true,
+                
                 dataPoints: [
                     { label: "Vishnu1 Menon", y: 69 },
                     { label: "Anushree1 Shukla", y: 58 },
@@ -97,7 +99,7 @@ class App extends Component {
         };
  
         return (
-            <div>
+            <div style={{marginTop : "100px",padding : "5px"}}> 
                 <CanvasJSChart options={options}
                 /* onRef={ref => this.chart = ref} */
                 />
