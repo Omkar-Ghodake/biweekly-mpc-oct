@@ -9,14 +9,14 @@ const Activities = () => {
     
     <div>
       <BgVideo videoSrc={bgVideo} loop={true} />
-      {/* <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '60px' }}>
-        <div style={{ flex: 1, marginRight: '10px' }}>
-          <PieChart />
-        </div>
-        <div style={{ flex: 1, marginLeft: '10px' }}>
-          <RegressionPieChart />
-        </div>
-      </div> */}
+        {/* <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '60px' }}>
+          <div style={{ flex: 1, marginRight: '10px' }}>
+            <PieChart />
+          </div>
+          <div style={{ flex: 1, marginLeft: '10px' }}>
+            <RegressionPieChart />
+          </div>
+        </div> */}
     </div>
   );
 }

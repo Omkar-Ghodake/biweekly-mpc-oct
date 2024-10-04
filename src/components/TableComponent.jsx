@@ -9,9 +9,9 @@ const TableComponent = ({ data }) => {
   const columns = Object.keys(data[0]);
 
   return (
-    <div className="relative overflow-x-auto shadow-md sm:rounded-lg font-automata mt-16"> 
-    <h1 className="text-white text-center text-3xl mb-5">MPC Score Count</h1>
-    <table className="w-2/3 mx-auto text-base text-left text-gray-500 dark:text-white">
+    <div className="relative overflow-x-auto shadow-md sm:rounded-lg font-automata my-16"> 
+    <h1 className="text-white text-center text-2xl mb-5">MPC Score Count</h1>
+    <table className="w-min mx-auto text-base text-left text-gray-500 dark:text-white">
       <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-blue-500 dark:text-white">
         <tr>
           {columns.map((col, index) => (

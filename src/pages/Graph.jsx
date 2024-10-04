@@ -4,13 +4,13 @@ import bgVideo from '../assets/intro_bg.mp4'
 import PerformanceGraph from '../components/PerformanceGraph'
 import TableComponent from '../components/TableComponent'
 import TableData from '../assets/TableData.json'
-
+import GrowingLineGraph from '../components/GrowingLineGraph'
 const jsonData = TableData
 const Graph = () => {
   
   return <div>
     <BgVideo videoSrc={bgVideo} loop={true} />  
-    {/* <PerformanceGraph/> */}
+    <GrowingLineGraph/>
     <TableComponent data={jsonData}/>
     </div>
 }
