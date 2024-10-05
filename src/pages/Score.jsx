@@ -44,7 +44,7 @@ const Score = () => {
       </div>
       <div className="card-container row-3">
       {rankedCardData.map(item => (
-        <Cards key={item.id} id={item.id} title={item.title} body={item.body} image={item.image} name={item.name} score_count={item.score_count} rank={item.rank} />
+        <Cards key={item.id} id={item.emp_id} title={item.title} body={item.body} image={item.image} name={item.name} score_count={item.score_count} rank={item.rank} />
       ))}
     </div>
     </>

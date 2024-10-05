@@ -1,113 +1,135 @@
 [
-  {
-      "name": "Vishnu Menon",
-      "score_count": 69,
-      "image": "images/Vishnu1.Menon.png"
-  },
-  {
-      "name": "Anushree Shukla",
-      "score_count": 58,
-      "image": "images/Anushree1.Shuklaa.png"
-  },
-  {
-      "name": "Anagha Shinde",
-      "score_count": 57,
-      "image": "images/Anagha.Shinde.png"
-  },
-  {
-      "name": "Dhiraj Kunder",
-      "score_count": 39,
-      "image": "image/dhiraj_kunder.jpg"
-  },
-  {
-      "name": "Bhavya Momaya",
-      "score_count": 34,
-      "image": "image/bhavya_momaya.jpg"
-  },
-  {
-      "name": "Avinash Gupta",
-      "score_count": 30,
-      "image": "image/avinash10_gupta.jpg"
-  },
-  {
-      "name": "Simran Surve",
-      "score_count": 27,
-      "image": "images/Simran.Surve.jpg"
-  },
-  {
-      "name": "Umakant Patil",
-      "image": "/images/Umakant.Patil.jpg",
-      "score_count": 20
-      
-  },
-  {
-      "name": "Mridul Upadhya",
-      "score_count": 19,
-      "image": "images/Mridul.Upadhya.jpg"
-  },
-  {
-      "name": "Pratik Joshi",
-      "score_count": 8,
-      "image": "images/Pratik5.Joshi.jpg"
-  },
-  {
-      "name": "Omkar Ghodake",
-      "score_count": 5,
-      "image": "images/Omkar.Ghodake.jpg"
-  },
-  {
-      "name": "Shubham Joshi",
-      "score_count": 5,
-      "image": "image/shubham_joshi.jpg"
-  },
-  {
-      "name": "Devraj Singh",
-      "score_count": 3,
-      "image": "images/Devraj3.Singh.png"
-  },
-  {
-      "name": "Jaypal Koli",
-      "score_count": 3,
-      "image": "images/Jaypal.Koli.jpg"
-  },
-  {
-      "name": "Sanjeev Prajapati",
-      "score_count": 3,
-      "image": "images/Sanjeev2.Prajapati.png"
-  },
-  {
-      "name": "Sakshi Rai",
-      "score_count": 1,
-      "image": "images/Sakshi1.Rai.jpg"
-  },
-  {
-      "name": "Manoj Inbarajan",
-      "score_count": 0,
-      "image": "images/Manoj.Inbarajan_.jpg"
-  },
-  {
-      "name": "Nikita Sonawane",
-      "score_count": 0,
-      "image": "images/Nikita.Sonawane.jpg"
-  },
-  {
-      "name": "Nikita Suhane",
-      "score_count": 0,
-      "image": "images/Nikita.Suhane.png"
-  },
-  {
-      "name": "Prathwikumar S",
-      "score_count": 0,
-      "image": "images/prathwikumar.s.JPG"
-  },
-  {
-      "name": "Rishabh.Kanaujiya",
-      "score_count": 0,
-      "image": "images/Rishabh.Kanaujiya.jpg"
-  },
-  {
-      "name": "Shriyash Thorat",
-      "score_count": 0,
-      "image": "image/shriyash_thorat.jpg"
-  }
-]
+    {
+        "emp_id": "55093251",
+        "name": "Vishnu Menon",
+        "score_count": 69,
+        "image": "images/Vishnu1.Menon.png"
+    },
+    {
+        "emp_id": "55093186",
+        "name": "Anushree Shukla",
+        "score_count": 58,
+        "image": "images/Anushree1.Shuklaa.png"
+    },
+    {
+        "emp_id": "55093230",
+        "name": "Anagha Shinde",
+        "score_count": 57,
+        "image": "images/Anagha.Shinde.png"
+    },
+    {
+        "emp_id": "55087655",
+        "name": "Dhiraj Kunder",
+        "score_count": 39,
+        "image": "image/dhiraj_kunder.jpg"
+    },
+    {
+        "emp_id": "55099194",
+        "name": "Bhavya Momaya",
+        "score_count": 34,
+        "image": "image/bhavya_momaya.jpg"
+    },
+    {
+        "emp_id": "55087478",
+        "name": "Avinash Gupta",
+        "score_count": 30,
+        "image": "image/avinash10_gupta.jpg"
+    },
+    {
+        "emp_id": "55093081",
+        "name": "Simran Surve",
+        "score_count": 27,
+        "image": "images/Simran.Surve.jpg"
+    },
+    {
+        "emp_id": "55099147",
+        "name": "Umakant Patil",
+        "score_count": 20,
+        "image": "/images/Umakant.Patil.jpg"
+    },
+    {
+        "emp_id": "55099238",
+        "name": "Mridul Upadhya",
+        "score_count": 19,
+        "image": "images/Mridul.Upadhya.jpg"
+    },
+    {
+        "emp_id": "55099022",
+        "name": "Pratik Joshi",
+        "score_count": 8,
+        "image": "images/Pratik5.Joshi.jpg"
+    },
+    {
+        "emp_id": "55099068",
+        "name": "Omkar Ghodake",
+        "score_count": 5,
+        "image": "images/Omkar.Ghodake.jpg"
+    },
+    {
+        "emp_id": "55099006",
+        "name": "Shubham Joshi",
+        "score_count": 5,
+        "image": "images/Shubham2.Joshi.jpg"
+    },
+    {
+        "emp_id": "55093428",
+        "name": "Devraj Singh",
+        "score_count": 3,
+        "image": "images/Devraj3.Singh.png"
+    },
+    {
+        "emp_id": "55099140",
+        "name": "Jaypal Koli",
+        "score_count": 3,
+        "image": "images/Jaypal.Koli.jpg"
+    },
+    {
+        "emp_id": "55093222",
+        "name": "Sanjeev Prajapati",
+        "score_count": 3,
+        "image": "images/Sanjeev2.Prajapati.png"
+    },
+    {
+        "emp_id": "55087415",
+        "name": "Sakshi Rai",
+        "score_count": 1,
+        "image": "images/Sakshi1.Rai.jpg"
+    },
+    {
+        "emp_id": "55093439",
+        "name": "Manoj Inbarajan",
+        "score_count": 0,
+        "image": "images/Manoj.Inbarajan_.jpg"
+    },
+    {
+        "emp_id": "55099135",
+        "name": "Nikita Sonawane",
+        "score_count": 0,
+        "image": "images/Nikita.Sonawane.jpg"
+    },
+    {
+        "emp_id": "55093276",
+        "name": "Nikita Suhane",
+        "score_count": 0,
+        "image": "images/Nikita.Suhane.png"
+    },
+    {
+        "emp_id": "55093373",
+        "name": "Prathwikumar S",
+        "score_count": 0,
+        "image": "images/prathwikumar.s.JPG"
+    },
+    {
+        "emp_id": "55114802",
+        "name": "Rishabh Kanaujiya",
+        "score_count": 0,
+        "image": "images/Rishabh.Kanaujiya.png"
+    },
+    {
+        "emp_id": "",
+        "name": "Shriyash Thorat",
+        "score_count": 0,
+        "image": "image/shriyash_thorat.jpg"
+    }
+  ]
+  
