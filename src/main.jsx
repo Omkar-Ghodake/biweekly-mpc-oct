@@ -47,7 +47,7 @@ createRoot(document.getElementById('root')).render(
         <Route path='/' element={<App />} />
         <Route path='/intro' element={<Intro />} />
         <Route path='/activities' element={<Activities />} />
-        <Route path='/score' element={<Cards />} />
+        <Route path='/score' element={<Score />} />
         <Route path='/graph' element={<Graph />} />
       </Routes>
     </BrowserRouter>
