@@ -6,6 +6,10 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 } */
 
+body {
+  color: white;
+}
+
 @layer base {
   @font-face {
     font-family: 'Automata';
