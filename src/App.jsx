@@ -3,6 +3,7 @@ import './App.css'
 import bgVideo from './assets/start_bg.mp4'
 import { motion } from 'framer-motion'
 import BgVideo from './components/BgVideo'
+
 function App() {
   return (
     <>

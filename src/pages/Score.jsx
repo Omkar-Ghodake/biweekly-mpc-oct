@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import BgVideo from '../components/BgVideo'
 import bgVideo from '../assets/intro_bg.mp4'
-import Cards from './Cards';
+import Cards from '../components/Cards';
 
 const Score = () => {
 
@@ -42,9 +42,9 @@ const Score = () => {
       <div>
         <BgVideo videoSrc={bgVideo} loop={true} />
       </div>
-      <div className="card-container row-3">
+      <div className="card-container">
       {rankedCardData.map(item => (
-        <Cards key={item.id} id={item.emp_id} title={item.title} body={item.body} image={item.image} name={item.name} score_count={item.score_count} rank={item.rank} />
+        <Cards key={item.id} id={item.emp_id} prev_team={item.prev_team} body={item.body} image={item.image} name={item.name} score_count={item.score_count} rank={item.rank} pre_score={item.pre_score}/>
       ))}
     </div>
     </>

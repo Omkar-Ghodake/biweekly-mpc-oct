@@ -9,6 +9,8 @@ import {
 } from 'react-router-dom'
 import App from './App.jsx'
 import './index.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Navbar from './layouts/Navbar.jsx'
 import Activities from './pages/Activities.jsx'
 import Intro from './pages/Intro.jsx'

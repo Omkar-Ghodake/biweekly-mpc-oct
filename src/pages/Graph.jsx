@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from '../components/Modal'
+
 
 const Graph = () => {
-  return <div>Graph</div>
+  
+
+  return <div>
+    {/* <button className='text-white bg-blue-500 hover:bg-slate-400'></button> */}
+   graph
+  </div>
 }
 
 export default Graph
