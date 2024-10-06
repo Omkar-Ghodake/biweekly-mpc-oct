@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react'
-import { Link, useLocation } from 'react-router-dom'
-import NavLink from '../components/Navlink'
+import React from 'react'
+import { useLocation } from 'react-router-dom'
+import NavLink from '../components/NavLink'
 
 const Navbar = () => {
   const { pathname } = useLocation()
