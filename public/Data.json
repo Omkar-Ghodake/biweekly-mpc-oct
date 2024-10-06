@@ -17,17 +17,17 @@
   {
       "name": "Dhiraj Kunder",
       "score_count": 39,
-      "image": "image/dhiraj_kunder.jpg"
+      "image": "images/Dhiraj.Kunder.jpg"
   },
   {
       "name": "Bhavya Momaya",
       "score_count": 34,
-      "image": "image/bhavya_momaya.jpg"
+      "image": "images/Bhavya.Momaya.jpg"
   },
   {
       "name": "Avinash Gupta",
       "score_count": 30,
-      "image": "image/avinash10_gupta.jpg"
+      "image": "images/Avinash.Gupta.jpg"
   },
   {
       "name": "Simran Surve",
@@ -58,7 +58,7 @@
   {
       "name": "Shubham Joshi",
       "score_count": 5,
-      "image": "image/shubham_joshi.jpg"
+      "image": "images/Shubham2.Joshi.jpg"
   },
   {
       "name": "Devraj Singh",
@@ -103,11 +103,11 @@
   {
       "name": "Rishabh.Kanaujiya",
       "score_count": 0,
-      "image": "images/Rishabh.Kanaujiya.jpg"
+      "image": "images/Rishabh.Kanaujiya.png"
   },
   {
       "name": "Shriyash Thorat",
       "score_count": 0,
-      "image": "image/shriyash_thorat.jpg"
+      "image": "images/Shriyash.Thorat.jpg"
   }
 ]
