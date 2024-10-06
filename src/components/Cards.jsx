@@ -85,9 +85,9 @@ const Cards = (props) => {
                 onHide={handleClose}
                 backdrop="true"
                 keyboard={true}
-                dialogClassName="custom-modal"
+                dialogClassName="custom-modal modal-animation "
             >
-                <Modal.Header closeButton onClick={handleClose}>
+                <Modal.Header  closeButton onClick={handleClose}style={{color:"white"}} >
                     {rank && <div>{renderMedal()}</div>}
                     <Modal.Title className='text-white'>{name}</Modal.Title>
                 </Modal.Header>
