@@ -1,6 +1,7 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
 import NavLink from '../components/NavLink'
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
   const { pathname } = useLocation()
@@ -9,9 +10,10 @@ const Navbar = () => {
   return (
     <>
       {!excludePath.includes(pathname) && (
-        <div
-          className='text-white flex font-mars fixed top-10 left-1/2 -translate-x-1/2
-        '
+        <motion.div
+          initial={{ x: '-50%', y: -100, opacity: 0 }}
+          animate={{ x: '-50%', y: 0, opacity: 1 }}
+          className='text-white flex font-mars fixed top-10 left-1/2'
         >
           <ul className='nav-list w-fit mx-auto flex justify-center items-center space-x-20 text-xl font-bold'>
             <NavLink title={'HOME'} url={'/'} />
@@ -19,7 +21,7 @@ const Navbar = () => {
             <NavLink title={'GRAPH'} url={'/graph'} />
             <NavLink title={'SCORE'} url={'/score'} />
           </ul>
-        </div>
+        </motion.div>
       )}
     </>
   )
