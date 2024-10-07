@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import BgVideo from "../components/BgVideo";
-import bgVideo from "../assets/intro_bg.mp4";
-import Cards from "./Cards";
-import Modal from "../components/Modal";
+
+import React, { useEffect, useState } from 'react'
+import BgVideo from '../components/BgVideo'
+import bgVideo from '../assets/intro_bg.mp4'
+import Cards from '../components/Cards';
 
 const Score = () => {
   const [data, setData] = useState([]);
@@ -57,32 +57,13 @@ const Score = () => {
       <div>
         <BgVideo videoSrc={bgVideo} loop={true} />
       </div>
-      <div className="flex justify-center mx-auto">
-        <div className="max-h-[99vh] w-full max-w-6xl justify-evenly overflow-y-auto no-scrollbar mt-10 p-4 bg-transparent rounded-lg shadow-lg container flex flex-row flex-wrap">
-          {rankedCardData.map((item) => (
-            <Cards
-              onClick={() => openModal(item)} // Pass the item instead of userData
-              key={item.id}
-              id={item.id}
-              title={item.title}
-              body={item.body}
-              image={item.image}
-              name={item.name}
-              currentScore={item.currentScore}
-              previousScore={item.previousScore}
-              completedCourses={item.completedCourses}
-              rank={item.rank}
-            />
-          ))}
-          <Modal
-            isOpen={isModalOpen}
-            onClose={closeModal}
-            userData={selectedUser} // This will now have the correct user data
-          />
-        </div>
-      </div>
+      <div className="card-container">
+      {rankedCardData.map(item => (
+        <Cards key={item.id} id={item.emp_id} prev_team={item.prev_team} body={item.body} image={item.image} name={item.name} score_count={item.score_count} rank={item.rank} pre_score={item.pre_score}/>
+      ))}
+    </div>
     </>
-  );
-};
+  )
+}
 
-export default Score;
+export default Score

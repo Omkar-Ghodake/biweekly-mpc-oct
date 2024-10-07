@@ -10,7 +10,7 @@ const Activities = () => {
   const [selectedActivity, setSelectedActivity] = useState(0)
 
   return (
-    <div className='w-full px-10 mx-auto font-automata font-thin max-h-[100vh] h-[100vh] overflow- flex items-end justify-start pb-10'>
+  <div className='w-full px-10 mx-auto font-automata font-thin max-h-[100vh] h-[100vh] overflow-hidden flex py-4 justify-start pb-10'>
       <div className='flex items-center space-x-5 w-full h-[75vh]'>
         <ActivitiesList
           setSelectedActivity={setSelectedActivity}

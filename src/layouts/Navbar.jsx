@@ -11,6 +11,10 @@ const Navbar = () => {
     <>
       {!excludePath.includes(pathname) && (
         <div className='text-white flex font-mars items-center mt-10'>
+        <div
+          className='text-white flex font-mars py-4
+        '
+        >
           <ul className='nav-list w-fit mx-auto flex justify-center items-center space-x-20 text-xl font-bold'>
             <NavLink title={'HOME'} url={'/'} />
             <NavLink title={'ACTIVITIES'} url={'/activities'} />

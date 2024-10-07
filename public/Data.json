@@ -1,157 +1,178 @@
 [
     {
-      "name": "Vishnu Menon",
-      "image": "images/Vishnu1.Menon.png",
-      "currentScore": 69,
-      "previousScore": 41,
-      "completedCourses": ["Course A", "Course B", "Course C"]
+        "emp_id": "55093251",
+        "name": "Vishnu Menon",
+        "score_count": 72,  
+        "image": "images/Vishnu1.Menon.png",
+        "pre_score": 41,
+        "previous_team": ""
     },
     {
-      "name": "Anushree Shukla",
-      "image": "images/Anushree1.Shuklaa.png",
-      "currentScore": 58,
-      "previousScore": 44,
-      "completedCourses": ["Course D", "Course E", "Course F"]
+        "emp_id": "55093186",
+        "name": "Anushree Shukla",
+        "score_count": 58,  
+        "image": "images/Anushree1.Shuklaa.png",
+        "pre_score": 44,
+        "previous_team": ""
     },
     {
-      "name": "Anagha Shinde",
-      "image": "images/Anagha.Shinde.png",
-      "currentScore": 57,
-      "previousScore": 43,
-      "completedCourses": ["Course G", "Course H", "Course I"]
+        "emp_id": "55093230",
+        "name": "Anagha Shinde",
+        "score_count": 57,  
+        "image": "images/Anagha.Shinde.png",
+        "pre_score": 43,
+        "previous_team": ""
     },
     {
-      "name": "Dhiraj Kunder",
-      "image": "images/Dhiraj.Kunder.jpg",
-      "currentScore": 39,
-      "previousScore": 39,
-      "completedCourses": ["Course J", "Course K", "Course L"]
+        "emp_id": "55087655",
+        "name": "Dhiraj Kunder",
+        "score_count": 39,  
+        "image": "images/Dhiraj.Kunder.jpg",
+        "pre_score": 39,
+        "previous_team": ""
     },
     {
-      "name": "Bhavya Momaya",
-      "image": "images/Bhavya.Momaya.jpg",
-      "currentScore": 34,
-      "previousScore": 79,
-      "completedCourses": ["Course M", "Course N", "Course O"]
+        "emp_id": "55099194",
+        "name": "Bhavya Momaya",
+        "score_count": 34,  
+        "image": "images/Bhavya.Momaya.jpg",
+        "pre_score": 79,
+        "previous_team": ""
     },
     {
-      "name": "Avinash Gupta",
-      "image": "images/Avinash.Gupta.jpg",
-      "currentScore": 30,
-      "previousScore": 50,
-      "completedCourses": ["Course P", "Course Q", "Course R"]
+        "emp_id": "55087478",
+        "name": "Avinash Gupta",
+        "score_count": 36,  
+        "image": "images/Avinash.Gupta.jpg",
+        "pre_score": 50,
+        "previous_team": ""
     },
     {
-      "name": "Simran Surve",
-      "image": "images/Simran.Surve.jpg",
-      "currentScore": 27,
-      "previousScore": 77,
-      "completedCourses": ["Course S", "Course T", "Course U"]
+        "emp_id": "55093081",
+        "name": "Simran Surve",
+        "score_count": 32,  
+        "image": "images/Simran.Surve.jpg",
+        "pre_score": 77,
+        "previous_team": ""
     },
     {
-      "name": "Umakant Patil",
-      "image": "images/Umakant.Patil.jpg",
-      "currentScore": 20,
-      "previousScore": 0,
-      "completedCourses": ["Course V", "Course W", "Course X"]
+        "emp_id": "55099147",
+        "name": "Umakant Patil",
+        "score_count": 20,  
+        "image": "/images/Umakant.jpg",
+        "pre_score": 0,
+        "previous_team": ""
     },
     {
-      "name": "Mridul Upadhya",
-      "image": "images/Mridul.Upadhya.jpg",
-      "currentScore": 19,
-      "previousScore": 0,
-      "completedCourses": ["Course Y", "Course Z", "Course AA"]
+        "emp_id": "55099238",
+        "name": "Mridul Upadhya",
+        "score_count": 19,  
+        "image": "images/Mridul.Upadhya.jpg",
+        "pre_score": 0,
+        "previous_team": ""
     },
     {
-      "name": "Pratik Joshi",
-      "image": "images/Pratik5.Joshi.jpg",
-      "currentScore": 8,
-      "previousScore": 0,
-      "completedCourses": ["Course AB", "Course AC", "Course AD"]
+        "emp_id": "55099022",
+        "name": "Pratik Joshi",
+        "score_count": 8,   
+        "image": "images/Pratik5.Joshi.jpg",
+        "pre_score": 0,
+        "previous_team": ""
     },
     {
-      "name": "Omkar Ghodake",
-      "image": "images/Omkar.Ghodake.jpg",
-      "currentScore": 5,
-      "previousScore": 0,
-      "completedCourses": ["Course AE", "Course AF", "Course AG"]
+        "emp_id": "55099068",
+        "name": "Omkar Ghodake",
+        "score_count": 8,   
+        "image": "images/Omkar.Ghodake.jpg",
+        "pre_score": 0,
+        "previous_team": ""
     },
     {
-      "name": "Shubham Joshi",
-      "image": "images/Shubham2.Joshi.jpg",
-      "currentScore": 5,
-      "previousScore": 0,
-      "completedCourses": ["Course AH", "Course AI", "Course AJ"]
+        "emp_id": "55099006",
+        "name": "Shubham Joshi",
+        "score_count": 5,   
+        "image": "images/Shubham2.Joshi.jpg",
+        "pre_score": 0,
+        "previous_team": ""
     },
     {
-      "name": "Devraj Singh",
-      "image": "images/Devraj3.Singh.png",
-      "currentScore": 3,
-      "previousScore": 0,
-      "completedCourses": ["Course AK", "Course AL", "Course AM"]
+        "emp_id": "55093428",
+        "name": "Devraj Singh",
+        "score_count": 3,   
+        "image": "images/Devraj3.Singh.png",
+        "pre_score": 0,
+        "previous_team": ""
     },
     {
-      "name": "Jaypal Koli",
-      "image": "images/Jaypal.Koli.jpg",
-      "currentScore": 3,
-      "previousScore": 0,
-      "completedCourses": ["Course AN", "Course AO", "Course AP"]
+        "emp_id": "55099140",
+        "name": "Jaypal Koli",
+        "score_count": 3,   
+        "image": "images/Jaypal.Koli.jpg",
+        "pre_score": 0,
+        "previous_team": ""
     },
     {
-      "name": "Sanjeev Prajapati",
-      "image": "images/Sanjeev2.Prajapati.png",
-      "currentScore": 3,
-      "previousScore": 0,
-      "completedCourses": ["Course AQ", "Course AR", "Course AS"]
+        "emp_id": "55093222",
+        "name": "Sanjeev Prajapati",
+        "score_count": 3,   
+        "image": "images/Sanjeev2.Prajapati.png",
+        "pre_score": 0,
+        "previous_team": ""
     },
     {
-      "name": "Sakshi Rai",
-      "image": "images/Sakshi1.Rai.jpg",
-      "currentScore": 1,
-      "previousScore": 0,
-      "completedCourses": ["Course AT", "Course AU", "Course AV"]
+        "emp_id": "55087415",
+        "name": "Sakshi Rai",
+        "score_count": 2,   
+        "image": "images/Sakshi1.Rai.jpg",
+        "pre_score": 0,
+        "previous_team": ""
     },
     {
-      "name": "Manoj Inbarajan",
-      "image": "images/Manoj.Inbarajan_.jpg",
-      "currentScore": 0,
-      "previousScore": 0,
-      "completedCourses": ["Course AW", "Course AX", "Course AY"]
+        "emp_id": "55093439",
+        "name": "Manoj Inbarajan",
+        "score_count": 0,
+        "image": "images/Manoj.Inbarajan_.jpg",
+        "pre_score": 0,
+        "previous_team": ""
     },
     {
-      "name": "Nikita Sonawane",
-      "image": "images/Nikita.Sonawane.jpg",
-      "currentScore": 0,
-      "previousScore": 0,
-      "completedCourses": ["Course AZ", "Course BA", "Course BB"]
+        "emp_id": "55099135",
+        "name": "Nikita Sonawane",
+        "score_count": 0,
+        "image": "images/Nikita.Sonawane.jpg",
+        "pre_score": 0,
+        "previous_team": ""
     },
     {
-      "name": "Nikita Suhane",
-      "image": "images/Nikita.Suhane.png",
-      "currentScore": 0,
-      "previousScore": 0,
-      "completedCourses": ["Course BC", "Course BD", "Course BE"]
+        "emp_id": "55093276",
+        "name": "Nikita Suhane",
+        "score_count": 0,
+        "image": "images/Nikita.Suhane.png",
+        "pre_score": 0,
+        "previous_team": ""
     },
     {
-      "name": "Prathwikumar S",
-      "image": "images/prathwikumar.s.JPG",
-      "currentScore": 0,
-      "previousScore": 0,
-      "completedCourses": ["Course BF", "Course BG", "Course BH"]
+        "emp_id": "55093373",
+        "name": "Prathwikumar S",
+        "score_count": 0,
+        "image": "images/prathwikumar.s.JPG",
+        "pre_score": 0,
+        "previous_team": ""
     },
     {
-      "name": "Rishabh.Kanaujiya",
-      "image": "images/Rishabh.Kanaujiya.png",
-      "currentScore": 0,
-      "previousScore": 0,
-      "completedCourses": ["Course BI", "Course BJ", "Course BK"]
+        "emp_id": "55114802",
+        "name": "Rishabh Kanaujiya",
+        "score_count": 0,
+        "image": "images/Rishabh.Kanaujiya.png",
+        "pre_score": 0,
+        "previous_team": ""
     },
     {
-      "name": "Shriyash Thorat",
-      "image": "images/Shriyash.Thorat.jpg",
-      "currentScore": 0,
-      "previousScore": 0,
-      "completedCourses": ["Course BL", "Course BM", "Course BN"]
+        "emp_id": "",
+        "name": "Shriyash Thorat",
+        "score_count": 0,
+        "image": "image/shriyash_thorat.jpg",
+        "pre_score": 0,
+        "previous_team": ""
     }
-  ]
-  
+]
