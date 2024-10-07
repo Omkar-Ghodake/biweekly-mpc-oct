@@ -1,6 +1,7 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
 import NavLink from '../components/NavLink'
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
   const { pathname } = useLocation()
@@ -16,7 +17,7 @@ const Navbar = () => {
             <NavLink title={'GRAPH'} url={'/graph'} />
             <NavLink title={'SCORE'} url={'/score'} />
           </ul>
-        </div>
+        </motion.div>
       )}
     </>
   )

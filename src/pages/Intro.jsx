@@ -6,21 +6,21 @@ import TypeTextAnimate from '../components/TypingTextAnimation/TypeTextAnimate'
 
 const Intro = () => {
   return (
-    <div>
-      <div className='h-[85vh] w-screen flex flex-col'>
+    <div className='flex justify-center items-center h-[100vh]'>
+      <div className='h-[85vh] w-screen flex flex-col justify-center'>
         <motion.div
-          initial={{ y: -100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, type: 'spring' }}
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.5 }}
           className='welcome flex justify-center items-center font-mars text-7xl tracking-wide w-fit h-fit mx-auto text-sky-100 py-12'
         >
           <h2 className='text-center'>WELCOME</h2>
         </motion.div>
 
         <motion.span
-          initial={{ y: -100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, type: 'spring' }}
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.5 }}
           className='text-sky-100 text-center text-2xl font-mars'
         >
           to
