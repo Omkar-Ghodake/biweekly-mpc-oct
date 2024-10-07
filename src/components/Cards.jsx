@@ -94,10 +94,13 @@ const Cards = (props) => {
 
                 <Modal.Body>
                     <div className="modal-image-container">
-                        <img src={image} alt={name} className="modal-image" />
+                    <p className="px-3 py-1.5" style={{fontFamily:"batman",color:"white"}}><strong>ID:</strong> {id}</p>      
+                        <img src={image} alt={name} className="modal-image mb-24" />
+                        
                     </div>
+                    
                     <div className="modal-content-container">
-                        <p className="score-count"><strong>ID:</strong> {id}</p>
+                        
                         <p className="score-count"><strong>Current Score:</strong> {score_count}</p>
                         <p className="score-count"><strong>Previous Score:</strong> {pre_score}</p>
                         <p className="score-count"><strong>No. Of Courses Completed:</strong> 2</p>

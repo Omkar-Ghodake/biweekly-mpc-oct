@@ -1,11 +1,22 @@
-import React from 'react'
-import bgVideo from '../assets/intro_bg.mp4'
-import BgVideo from '../components/BgVideo'
+import React, { useState } from 'react'
+import ActivitiesList from '../components/Home/ActivitiesList'
+import ActivityDetails from '../components/Home/ActivityDetails'
 
 const Activities = () => {
+  const [selectedActivity, setSelectedActivity] = useState(0)
+
+  console.log('selectedActivity', selectedActivity)
+
   return (
-    <div>
-      <BgVideo videoSrc={bgVideo} loop={true} />
+  <div className='w-full px-10 mx-auto font-automata font-thin max-h-[100vh] h-[100vh] overflow-hidden flex py-4 justify-start pb-10'>
+      <div className='flex items-center space-x-5 w-full h-[75vh]'>
+        <ActivitiesList
+          setSelectedActivity={setSelectedActivity}
+          selectedActivity={selectedActivity}
+        />
+
+        <ActivityDetails selectedActivity={selectedActivity} />
+      </div>
     </div>
   )
 }

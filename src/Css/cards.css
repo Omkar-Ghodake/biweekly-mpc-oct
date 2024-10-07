@@ -1,6 +1,7 @@
 /* src/Card.css */
 
 .card {
+    
     position: relative;
     border-radius: 8px;
     overflow: hidden;
@@ -68,7 +69,7 @@
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
-    padding: 20px;
+    padding-bottom: 10px;
     perspective: 1000px;
     /* display: grid;  */
     gap: 10px;              /* Use CSS Grid */
@@ -193,7 +194,7 @@
     box-shadow: 
         0 4px 8px rgba(0, 0, 0, 0.2), /* Base shadow */
         0 0 20px rgb(1, 104, 173); /* Glow effect */
-    border: 2px solid goldenrod;
+    border: 2px solid rgb(228, 158, 7); 
     
 }
 
@@ -221,11 +222,12 @@
     border-radius: 30px;
     background-color: rgba(6, 84, 136, 0.5); /* Semi-transparent white */
     border-radius: 0 0 0px 0px; /* Rounded bottom corners */
-    padding: 15px; /* Padding around the content */
+    padding: 20px; /* Padding around the content */
     /* border: 2px solid rgb(228, 158, 7);; */
     
-    align-items: center; 
+    justify-content: center; 
 
+    max-height: 300px;
 }
 
 .modal-image-container {
@@ -238,10 +240,12 @@
 .modal-image {
     width: auto; /* Full width of the container */
     height: auto; /* Full height */
-    object-fit: fill; /* Cover the area without distortion */
+    object-fit: cover; /* Cover the area without distortion */
     border-radius: 15px; /* Match the card's border radius */
     border: 3px solid rgb(3, 150, 235);
-    margin-left: 5px;
+    margin-left: 3px;
+    
+    
    
   
 

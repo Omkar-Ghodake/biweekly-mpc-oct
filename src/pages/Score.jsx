@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react'
 import BgVideo from '../components/BgVideo'
 import bgVideo from '../assets/intro_bg.mp4'
@@ -49,7 +50,6 @@ const Score = () => {
     </div>
     </>
   )
-
 }
 
 export default Score

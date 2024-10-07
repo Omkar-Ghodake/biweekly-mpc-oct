@@ -2,7 +2,7 @@
     {
         "emp_id": "55093251",
         "name": "Vishnu Menon",
-        "score_count": 69,
+        "score_count": 72,  
         "image": "images/Vishnu1.Menon.png",
         "pre_score": 41,
         "previous_team": ""
@@ -10,7 +10,7 @@
     {
         "emp_id": "55093186",
         "name": "Anushree Shukla",
-        "score_count": 58,
+        "score_count": 58,  
         "image": "images/Anushree1.Shuklaa.png",
         "pre_score": 44,
         "previous_team": ""
@@ -18,7 +18,7 @@
     {
         "emp_id": "55093230",
         "name": "Anagha Shinde",
-        "score_count": 57,
+        "score_count": 57,  
         "image": "images/Anagha.Shinde.png",
         "pre_score": 43,
         "previous_team": ""
@@ -26,31 +26,31 @@
     {
         "emp_id": "55087655",
         "name": "Dhiraj Kunder",
-        "score_count": 39,
-        "image": "image/dhiraj_kunder.jpg",
+        "score_count": 39,  
+        "image": "images/Dhiraj.Kunder.jpg",
         "pre_score": 39,
         "previous_team": ""
     },
     {
         "emp_id": "55099194",
         "name": "Bhavya Momaya",
-        "score_count": 34,
-        "image": "image/bhavya_momaya.jpg",
+        "score_count": 34,  
+        "image": "images/Bhavya.Momaya.jpg",
         "pre_score": 79,
         "previous_team": ""
     },
     {
         "emp_id": "55087478",
         "name": "Avinash Gupta",
-        "score_count": 30,
-        "image": "image/avinash10_gupta.jpg",
+        "score_count": 36,  
+        "image": "images/Avinash.Gupta.jpg",
         "pre_score": 50,
         "previous_team": ""
     },
     {
         "emp_id": "55093081",
         "name": "Simran Surve",
-        "score_count": 27,
+        "score_count": 32,  
         "image": "images/Simran.Surve.jpg",
         "pre_score": 77,
         "previous_team": ""
@@ -58,15 +58,15 @@
     {
         "emp_id": "55099147",
         "name": "Umakant Patil",
-        "score_count": 20,
-        "image": "/images/Umakant.Patil.jpg",
+        "score_count": 20,  
+        "image": "/images/Umakant.jpg",
         "pre_score": 0,
         "previous_team": ""
     },
     {
         "emp_id": "55099238",
         "name": "Mridul Upadhya",
-        "score_count": 19,
+        "score_count": 19,  
         "image": "images/Mridul.Upadhya.jpg",
         "pre_score": 0,
         "previous_team": ""
@@ -74,7 +74,7 @@
     {
         "emp_id": "55099022",
         "name": "Pratik Joshi",
-        "score_count": 8,
+        "score_count": 8,   
         "image": "images/Pratik5.Joshi.jpg",
         "pre_score": 0,
         "previous_team": ""
@@ -82,7 +82,7 @@
     {
         "emp_id": "55099068",
         "name": "Omkar Ghodake",
-        "score_count": 5,
+        "score_count": 8,   
         "image": "images/Omkar.Ghodake.jpg",
         "pre_score": 0,
         "previous_team": ""
@@ -90,7 +90,7 @@
     {
         "emp_id": "55099006",
         "name": "Shubham Joshi",
-        "score_count": 5,
+        "score_count": 5,   
         "image": "images/Shubham2.Joshi.jpg",
         "pre_score": 0,
         "previous_team": ""
@@ -98,7 +98,7 @@
     {
         "emp_id": "55093428",
         "name": "Devraj Singh",
-        "score_count": 3,
+        "score_count": 3,   
         "image": "images/Devraj3.Singh.png",
         "pre_score": 0,
         "previous_team": ""
@@ -106,7 +106,7 @@
     {
         "emp_id": "55099140",
         "name": "Jaypal Koli",
-        "score_count": 3,
+        "score_count": 3,   
         "image": "images/Jaypal.Koli.jpg",
         "pre_score": 0,
         "previous_team": ""
@@ -114,7 +114,7 @@
     {
         "emp_id": "55093222",
         "name": "Sanjeev Prajapati",
-        "score_count": 3,
+        "score_count": 3,   
         "image": "images/Sanjeev2.Prajapati.png",
         "pre_score": 0,
         "previous_team": ""
@@ -122,7 +122,7 @@
     {
         "emp_id": "55087415",
         "name": "Sakshi Rai",
-        "score_count": 1,
+        "score_count": 2,   
         "image": "images/Sakshi1.Rai.jpg",
         "pre_score": 0,
         "previous_team": ""

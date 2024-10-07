@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react'
 
 
@@ -9,6 +10,7 @@ const Graph = () => {
     {/* <button className='text-white bg-blue-500 hover:bg-slate-400'></button> */}
    graph
   </div>
+
 }
 
 export default Graph
