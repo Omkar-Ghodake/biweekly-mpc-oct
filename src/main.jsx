@@ -15,7 +15,6 @@ import Intro from './pages/Intro.jsx'
 import Cards from './pages/Cards.jsx'
 import Graph from './pages/Graph.jsx'
 import Score from './pages/Score.jsx'
-import Graph from './pages/Graph.jsx'
 import BgVideo from './components/BgVideo.jsx'
 import bodyBg from './assets/intro_bg.mp4'
 
