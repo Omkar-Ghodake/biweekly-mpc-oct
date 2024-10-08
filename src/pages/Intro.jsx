@@ -12,7 +12,7 @@ const Intro = () => {
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.5 }}
-          className='welcome flex justify-center items-center font-mars text-7xl tracking-wide w-fit h-fit mx-auto text-sky-100 py-12'
+          className='welcome flex justify-center items-center font-mars text-7xl tracking-wide w-fit h-fit mx-auto text-sky-100 pb-12'
         >
           <h2 className='text-center'>WELCOME</h2>
         </motion.div>
@@ -45,11 +45,11 @@ const Intro = () => {
           </motion.span>
         </motion.div>
 
-        <div className='w-[40%] mx-auto h-fit font-batman flex flex-col items-center space-y-5 pt-5 text-center text-2xl text-sky-400'>
+        <div className='w-[40%] mx-auto h-fit font-batman flex flex-col items-center space-y-5 pt-5 text-center text-3xl text-sky-400'>
           {/* <span className='text-center text-2xl text-sky-400'>
             The MP Seva Tracker
           </span> */}
-          <TypeTextAnimate text={'The MP Seva Tracker'} />
+          <TypeTextAnimate text={'Bi-Weekly : 08 October, 2024'} />
         </div>
 
         <motion.div
