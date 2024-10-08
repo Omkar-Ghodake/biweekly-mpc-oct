@@ -238,8 +238,8 @@
 }
 
 .modal-image {
-    width: auto; /* Full width of the container */
-    height: auto; /* Full height */
+    width: 300px; /* Full width of the container */
+    height: 350px; /* Full height */
     object-fit: cover; /* Cover the area without distortion */
     border-radius: 15px; /* Match the card's border radius */
     border: 3px solid rgb(3, 150, 235);
@@ -289,7 +289,7 @@
 }
 
 .modal-content {
-    height: 600px;
+    height: 550px;
     border-radius: 10px; /* Rounded corners for the modal */
 }
 

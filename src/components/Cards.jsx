@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Bar } from 'react-chartjs-2';
-import { Chart, registerables } from 'chart.js';
+import { Chart, registerables, SubTitle } from 'chart.js';
 import '../Css/cards.css'; // Ensure your CSS file is correctly imported
 import { Modal } from 'react-bootstrap';
+import { text } from 'framer-motion/client';
+import { color, toFont } from 'chart.js/helpers';
 
 Chart.register(...registerables);
 
@@ -35,13 +37,16 @@ const Cards = (props) => {
 
     const data = {
         labels: ['Previous Score', 'Current Score'],
+        title:"Performance Graph",
         datasets: [
             {
-                label: 'Previous Score Vs Current Score',
+                
+                
                 data: [pre_score, score_count],
                 backgroundColor: ['rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)'],
                 borderColor: ['rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)'],
                 borderWidth: 1,
+                label: `Previous Score : ${pre_score} Vs Current Score : ${score_count}`,
             },
         ],
     };
@@ -65,7 +70,16 @@ const Cards = (props) => {
                 labels: {
                     color: 'white',
                 },
+
             },
+            title:{
+                display:true,
+                text:"Performance Graph",
+                color:"White",
+                
+                
+                
+            }
         },
     };
 
@@ -87,7 +101,7 @@ const Cards = (props) => {
                 keyboard={true}
                 dialogClassName="custom-modal modal-animation "
             >
-                <Modal.Header  closeButton onClick={handleClose}style={{color:"white"}} >
+                <Modal.Header  closeButton onClick={handleClose} >
                     {rank && <div>{renderMedal()}</div>}
                     <Modal.Title className='text-white'>{name}</Modal.Title>
                 </Modal.Header>
@@ -95,7 +109,7 @@ const Cards = (props) => {
                 <Modal.Body>
                     <div className="modal-image-container">
                     <p className="px-3 py-1.5" style={{fontFamily:"batman",color:"white"}}><strong>ID:</strong> {id}</p>      
-                        <img src={image} alt={name} className="modal-image mb-24" />
+                        <img src={image} alt={name} className="modal-image mb-20" />
                         
                     </div>
                     
@@ -105,7 +119,7 @@ const Cards = (props) => {
                         <p className="score-count"><strong>Previous Score:</strong> {pre_score}</p>
                         <p className="score-count"><strong>No. Of Courses Completed:</strong> 2</p>
                         <p className="score-count"><strong>Previous Team:</strong> {prev_team}</p>
-                        <Bar className="my-4" data={data} options={options} />
+                        <Bar className="my-3" data={data} options={options} />
                     </div>
                 </Modal.Body>
             </Modal>
