@@ -4,8 +4,6 @@ import { ACTIVITIES_DATA } from '../../data'
 import { motion } from 'framer-motion'
 
 const ActivitiesList = ({ setSelectedActivity, selectedActivity }) => {
-  const arr = [0, 1, 2, 3, 4, 5, 6, 7]
-
   return (
     <motion.div
       initial={{ x: -100, opacity: 0 }}
@@ -13,11 +11,11 @@ const ActivitiesList = ({ setSelectedActivity, selectedActivity }) => {
       transition={{ type: 'tween' }}
       className='w-1/3 text-xl relative flex flex-col justify-between h-full'
     >
-      {ACTIVITIES_DATA.map((item) => (
+      {ACTIVITIES_DATA.map((item, index) => (
         <ActivitiesListItem
           key={item.title}
           title={item.title}
-          optionNumber={item.id}
+          optionNumber={index}
           selectedActivity={selectedActivity}
           setSelectedActivity={setSelectedActivity}
         />
