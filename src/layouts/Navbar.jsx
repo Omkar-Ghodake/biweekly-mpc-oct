@@ -15,7 +15,7 @@ const Navbar = () => {
           animate={{ x: '-50%', y: 0, opacity: 1 }}
           className='text-white flex font-mars fixed top-10 left-1/2'
         >
-          <ul className='nav-list w-fit mx-auto flex justify-center items-center space-x-20 text-xl font-bold'>
+          <ul className='nav-list w-fit mx-auto flex justify-center items-center space-x-10 text-xl font-bold'>
             <NavLink title={'HOME'} url={'/intro'} />
             <NavLink title={'ACTIVITIES'} url={'/activities'} />
             <NavLink title={'GRAPH'} url={'/graph'} />

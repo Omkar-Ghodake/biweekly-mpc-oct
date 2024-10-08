@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import ActivitiesList from '../components/Home/ActivitiesList'
 import ActivityDetails from '../components/Home/ActivityDetails'
-import { ACTIVITIES_DATA } from '../data'
-import ActivityTitle from '../components/Home/ActivityTitle'
 import ActivityInfo from '../components/Home/ActivityInfo'
-import ScorePieChart from '../components/Graphs/ScorePieChart'
+import ActivityTitle from '../components/Home/ActivityTitle'
+import { ACTIVITIES_DATA } from '../data'
 
 const Activities = () => {
   const [selectedActivity, setSelectedActivity] = useState(0)

@@ -45,7 +45,7 @@ const Intro = () => {
           </motion.span>
         </motion.div>
 
-        <div className='w-[40%] mx-auto h-fit font-batman flex flex-col items-center space-y-5 pt-5 text-center text-3xl text-sky-400'>
+        <div className='w-full mx-auto h-fit font-batman flex flex-col items-center space-y-5 pt-5 text-center text-3xl text-sky-400'>
           {/* <span className='text-center text-2xl text-sky-400'>
             The MP Seva Tracker
           </span> */}

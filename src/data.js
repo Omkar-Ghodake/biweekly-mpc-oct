@@ -63,7 +63,7 @@ export const ACTIVITIES_DATA = [
     otherData: [],
     members: [
       {
-        key: 'Participants',
+        key: 'Members',
         value: ['Simran.Surve', 'Nikita.Sonawane', 'Avinash10.Gupta'],
       },
     ],
