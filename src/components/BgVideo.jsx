@@ -6,7 +6,9 @@ const BgVideo = ({ videoSrc, loop }) => {
 
   return (
     <video
-      className={`bg-video ${pathname !== '/' && 'brightness-75'}`}
+      className={`bg-video fixed inset-0 ${
+        pathname !== '/' && 'brightness-75'
+      }`}
       loop={loop}
       muted
       autoPlay

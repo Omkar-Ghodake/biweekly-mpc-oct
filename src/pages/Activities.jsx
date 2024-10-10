@@ -4,6 +4,7 @@ import ActivityDetails from '../components/Home/ActivityDetails'
 import ActivityInfo from '../components/Home/ActivityInfo'
 import ActivityTitle from '../components/Home/ActivityTitle'
 import { ACTIVITIES_DATA } from '../data'
+import { motion } from 'framer-motion'
 
 const Activities = () => {
   const [selectedActivity, setSelectedActivity] = useState(0)
@@ -22,7 +23,7 @@ const Activities = () => {
         />
 
         <ActivityDetails>
-          <div className='activity-head flex flex-col space-y-2 h-fit'>
+          <motion.div className='activity-head flex flex-col space-y-2 h-fit'>
             <ActivityTitle>{selectedActivityDetails?.title}</ActivityTitle>
 
             {selectedActivityDetails?.activityInfo && (
@@ -30,7 +31,7 @@ const Activities = () => {
                 {selectedActivityDetails?.activityInfo}
               </ActivityInfo>
             )}
-          </div>
+          </motion.div>
 
           <div className='w-full h-[.5px] bg-sky-500'></div>
 
@@ -38,6 +39,12 @@ const Activities = () => {
             <>
               <div className='left w-1/2 border border-sky-800 rounded-md flex justify-center items-center'>
                 {selectedActivityDetails?.chartComponent}
+                {selectedActivityDetails?.imgUrl && (
+                  <img
+                    src={selectedActivityDetails?.imgUrl}
+                    className='w-1/2'
+                  />
+                )}
               </div>
 
               <div className='right w-1/2 p-5 border border-sky-800 rounded-md flex flex-col'>

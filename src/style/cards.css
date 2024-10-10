@@ -1,0 +1,354 @@
+/* src/Card.css */
+
+.card {
+    
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    width: 300px;           /* Card width */
+    height: auto;          /* Card height */
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.1),      /* Base shadow */
+        0 0 10px rgba(33, 152, 231, 0.5);   /* Glow effect */
+        border: 3px solid rgba(9, 250, 238, 0.671);/* Semi-transparent border */
+    
+}
+
+.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.2),         /* Shadow for depth */
+        0 0 20px rgba(21, 163, 251, 1),       /* Neon glow */
+        0 0 30px rgba(21, 163, 251, 0.8),     /* Stronger glow */
+        0 0 40px rgba(21, 163, 251, 0.6);
+           
+}
+
+
+.card-image {
+    width: 120px;                /* Image width */
+    height: 120px; 
+    margin-top: 25px;              /* Image height */
+    border-radius: 50%;          /* Circular image */
+    object-fit: cover;           /* Maintain aspect ratio */
+    position: relative;          /* Positioning for centering */
+    top: 25%;                    /* Move down 50% from the top */
+    left: 50%;                   /* Move right 50% from the left */
+    transform: translate(-50%, -50%); /* Center the image */
+    z-index: 2;                  /* Ensure it's above the background */
+    border: 3px solid rgb(228, 158, 7); 
+    margin-bottom: 50px;
+}
+
+.card-content {
+    padding: 5px;          /* Increased padding for content */
+    position: relative;      /* Ensure the content is positioned correctly */
+    z-index: 1;             /* Place content above the blurred background */
+}
+
+.card-body {
+    font-size: 1.2rem;      /* Larger font size for body text */
+    color: #fff;            /* White text for better contrast */
+}
+
+.card-author {
+    font-size: 1rem;        /* Larger font size for author text */
+    color: #ffffff;           /* White text for author */
+    /* font-weight: bold; */
+    font-family: Batman; 
+    
+    margin-bottom: 15px;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding-bottom: 10px;
+    perspective: 1000px;
+    /* display: grid;  */
+    gap: 10px;              /* Use CSS Grid */
+    /* grid-template-columns: repeat(3, 1fr); */
+    
+    justify-items: center;
+    
+}
+
+.column {
+    width: 48%; /* Adjust width as necessary */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center cards in the column */
+}
+
+/* Background image with blur effect */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;  /* Cover the entire card */
+    filter: blur(15px);      /* Blur the background image */
+    z-index: 0;              /* Place behind card content */
+}
+
+.divider {
+    border: none;              /* Remove default border */
+    border-top: 3px solid #15a3fb; /* Set the color and style of the underline */
+    margin: 10px 0;            /* Adjust spacing around the line */
+}
+
+.medal-container {
+    position: absolute;           /* Positioning for the medal */
+    top: 5px;                   /* Adjust top position */
+    left: 10%;                   /* Center horizontally */
+    transform: translateX(-50%); /* Centering correction */
+    z-index: 3;                  /* Ensure it's above the card content */
+}
+
+.medal {
+    width: 50px;                 /* Adjust size of the medal */
+    height: auto;                /* Maintain aspect ratio */
+}
+.emp-id {
+    position: absolute;           /* Positioning for the medal */
+    top: 2px;                   /* Adjust top position */
+    left: 65%;                   /* Center horizontally */
+    transform: translateX(-10%); /* Centering correction */
+    z-index: 3; 
+    font-family: batman;
+    color: #fff                 /* Ensure it's above the card content */
+}
+.card {
+    position: relative;
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+    margin: 20px;
+    width: 300px; /* Card width */
+    height: 300px; /* Card height */
+    text-align: center;
+    background: transparent; /* Transparent background */
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.1), 
+        0 0 10px rgba(33, 152, 231, 0.5); /* Glow effect */
+}
+
+/* Create moving line around the outer border */
+@keyframes flash {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes flash {
+    0% {
+        background-position: top;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        background-position: bottom;
+        opacity: 0;
+    }
+}
+
+.card:hover .flash {
+    
+    animation: flash .9s forwards; /* Flash effect on hover */
+    background: linear-gradient(to bottom, lightblue, transparent);
+    
+}
+
+.flash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent; /* Initial background */
+    pointer-events: none; /* Prevent blocking interactions */
+    z-index: 1; /* Ensure it’s above the card background but below other content */
+    background-size: 100% 200%; /* Double the height for the animation */
+}
+/* Modal CSS */
+/* Modal Styles */
+.modal-content {
+    
+    border-radius: 8px; /* Rounded corners */
+    background: rgba(1, 92, 153, 0.9); /* Transparent background */
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.2), /* Base shadow */
+        0 0 20px rgb(1, 104, 173); /* Glow effect */
+    border: 2px solid rgb(228, 158, 7); 
+    
+}
+
+.modal-header {
+     margin-right: 5px;/* Remove default border */
+    display: flex;
+    
+    align-items: center; /* Center items vertically */
+    padding: 5px; /* Add padding */
+    background: rgba(1, 92, 153, 0.5); 
+     /* Light background */
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+}
+
+.modal-title {
+    font-family: Batman; /* Same font as cards */
+    font-size: 1.5rem; /* Title size */
+    color: #333; /* Dark text for contrast */
+    margin-left: 10px; /* Space from the medal */
+}
+
+.modal-body {
+    
+    display: flex; /* Use flexbox for layout */
+    border-radius: 30px;
+    background-color: rgba(6, 84, 136, 0.5); /* Semi-transparent white */
+    border-radius: 0 0 0px 0px; /* Rounded bottom corners */
+    padding: 20px; /* Padding around the content */
+    /* border: 2px solid rgb(228, 158, 7);; */
+    
+    justify-content: center; 
+
+    max-height: 300px;
+}
+
+.modal-image-container {
+    flex: 1.5; /* Take full height and width */
+    position: relative; /* For absolute positioning */
+    
+    
+}
+
+.modal-image {
+    width: 300px; /* Full width of the container */
+    height: 350px; /* Full height */
+    object-fit: cover; /* Cover the area without distortion */
+    border-radius: 15px; /* Match the card's border radius */
+    border: 3px solid rgb(3, 150, 235);
+    margin-left: 3px;
+    
+    
+   
+  
+
+    
+}
+
+.modal-content-container {
+    
+    flex: 1.7; /* Give more space to content */
+    
+    padding-left: 20px; /* Space between image and text */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+}
+
+.score-count {
+    margin-top: 5px; /* Space above the score count */
+    font-family: "batman"; /* Apply the Batman font */
+    font-size: 0.9rem; /* Adjust font size for visibility */
+    color: #161616; /* Dark text for contrast */
+    background: rgba(253, 250, 250, 0.726); /* Light background for score count */
+    padding: 7px; /* Padding for text */
+    border-radius: 5px; /* Rounded corners for score count */
+}
+.score-count:hover{
+    background-color: #99c1e9;
+    /* cursor: pointer; */
+}
+
+.blur {
+    filter: blur(5px); /* Adjust the blur value as needed */
+    transition: filter 0.3s ease; /* Smooth transition */
+}
+
+/* cards.css */
+
+.custom-modal {
+    max-width: 700px; /* Set your desired width */
+    width: 100%; /* Make it responsive */
+    height: auto; /* Allow height to adjust based on content */
+}
+
+.modal-content {
+    height: 550px;
+    border-radius: 10px; /* Rounded corners for the modal */
+}
+
+.modal-body {
+    padding: 10px; /* Adjust padding as needed */
+}
+/* Add this to your CSS file */
+.modal-animation {
+    animation: tvSwitchOn 0.5s ease forwards; /* Adjust duration and easing as needed */
+}
+@keyframes tvSwitchOn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+.course-tooltip {
+    display: none;
+    position: absolute;
+    background-color: #1F2937 ;
+    
+    
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.2), /* Base shadow */
+        0 0 20px rgb(1, 104, 173); 
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-right : 12px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.course-container:hover .course-tooltip {
+    display: block;
+}
+.courses-list {
+    margin-top: 10px;
+}
+
+.course-item {
+    margin: 5px 0;
+    color: white; /* Change color as needed */
+}
+.hoverable {
+    cursor: pointer;
+}
+
+.courses-list {
+    margin-top: 10px;
+}
+
+.course-item {
+    margin: 5px 0;
+    color: white; /* Adjust as needed */
+}

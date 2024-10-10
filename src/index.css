@@ -24,3 +24,38 @@ body {
     src: url('./fonts/batman_forever/batmfa__.ttf');
   }
 }
+
+@layer components {
+  /* width */
+  body::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  body::-webkit-scrollbar-track {
+    @apply bg-slate-800;
+  }
+
+  /* Handle */
+  body::-webkit-scrollbar-thumb {
+    @apply bg-sky-700 duration-150 rounded-full;
+  }
+
+  /* Handle on hover */
+  body::-webkit-scrollbar-thumb:hover {
+    @apply bg-sky-600;
+  }
+}
+
+.blur-bg {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+body.power-menu-open {
+  height: 100vh !important;
+  overflow: hidden;
+}

@@ -8,7 +8,7 @@ const data = {
   datasets: [
     {
       label: 'MPC Issues',
-      data: [6, 24, 32, 13, 27],
+      data: [4, 15, 18, 8, 17],
     },
   ],
   // backgroundColor: [

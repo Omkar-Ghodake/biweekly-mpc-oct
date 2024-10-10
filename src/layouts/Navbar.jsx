@@ -1,26 +1,64 @@
-import React from 'react'
+import { motion } from 'framer-motion'
+import React, { useContext } from 'react'
+import { IoPower } from 'react-icons/io5'
 import { useLocation } from 'react-router-dom'
 import NavLink from '../components/NavLink'
-import { motion } from 'framer-motion'
+import { PowerMenuContext } from '../context/PowerMenuProvider'
 
 const Navbar = () => {
   const { pathname } = useLocation()
 
-  const excludePath = ['/', '/intro']
+  const { showPowerMenu, setShowPowerMenu, togglePowerMenu } =
+    useContext(PowerMenuContext)
+
+  // const [isHamburgerActive, setIsHamburgerActive] = useState(false)
+
+  const getActiveNavlinkPosition = () => {
+    const length = 15
+
+    if (pathname === '/intro') return length * 0
+    if (pathname === '/activities') return length * 1
+    if (pathname === '/score') return length * 2
+    if (pathname === '/graph') return length * 3
+  }
+
+  // const toggleHamburgerMenu = () =>
+  //   isHamburgerActive ? setIsHamburgerActive(false) : setIsHamburgerActive(true)
+
+  // useEffect(() => {
+  //   setCurrentPath(getPathnameIndex())
+  // }, [])
+
+  const excludePath = ['/', '/intro', '/exit']
   return (
     <>
       {!excludePath.includes(pathname) && (
         <motion.div
           initial={{ x: '-50%', y: -100, opacity: 0 }}
           animate={{ x: '-50%', y: 0, opacity: 1 }}
-          className='text-white flex font-mars fixed top-10 left-1/2'
+          className='text-white flex font-mars fixed left-1/2 backdrop-blur-md  w-full z-40 border-b border-b-sky-800/60 py-9 px-10'
         >
-          <ul className='nav-list w-fit mx-auto flex justify-center items-center space-x-10 text-xl font-bold'>
+          <ul className='nav-list relative w-fit mx-auto flex justify-center items-center text-xl font-bold'>
+            <motion.div
+              initial={{ opacity: 0, x: 0 }}
+              animate={{ opacity: 1, x: `${getActiveNavlinkPosition()}vw` }}
+              transition={{ type: 'tween', duration: 0.2 }}
+              className={`h-[2px] w-[15vw] absolute left-0 bottom-0 duration-150 `}
+            >
+              <div className='bg-white h-full w-[80%] mx-auto'></div>
+            </motion.div>
             <NavLink title={'HOME'} url={'/intro'} />
             <NavLink title={'ACTIVITIES'} url={'/activities'} />
-            <NavLink title={'GRAPH'} url={'/graph'} />
             <NavLink title={'SCORE'} url={'/score'} />
+            <NavLink title={'GRAPH'} url={'/graph'} />
           </ul>
+
+          <span
+            className='flex justify-center items-center cursor-pointer hover:bg-blue-500/10 border border-blue-500/20 w-12 h-12 p-2 rounded-full duration-300'
+            onClick={togglePowerMenu}
+          >
+            <IoPower />
+          </span>
         </motion.div>
       )}
     </>
