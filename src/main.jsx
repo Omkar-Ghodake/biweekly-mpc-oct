@@ -17,48 +17,28 @@ import Activities from './pages/Activities.jsx'
 import Exit from './pages/Exit.jsx'
 import Graph from './pages/Graph.jsx'
 import Intro from './pages/Intro.jsx'
-import Score from './pages/Score.jsx'
-// import Score from './pages/ScoreNew.jsx'
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
-  },
-  {
-    path: '/intro',
-    element: <Intro />,
-  },
-  {
-    path: '/activities',
-    element: <Activities />,
-  },
-  {
-    path: '/score',
-    element: <Score />,
-  },
-  {
-    path: '/graph',
-    element: <Graph />,
-  },
-])
+// import Score from './pages/Score.jsx'
+import Score from './pages/ScoreNew.jsx'
+import ScoreCardProvider from './context/ScoreCardProvider.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <PowerMenuProvider>
-        <BgVideo videoSrc={bodyBg} loop={true} />
-        <Navbar />
-        <PowerMenu />
-        <Routes>
-          <Route path='/' element={<App />} />
-          <Route path='/intro' element={<Intro />} />
-          <Route path='/activities' element={<Activities />} />
-          <Route path='/score' element={<Score />} />
-          <Route path='/graph' element={<Graph />} />
-          <Route path='/exit' element={<Exit />} />
-        </Routes>
-      </PowerMenuProvider>
+      <ScoreCardProvider>
+        <PowerMenuProvider>
+          <BgVideo videoSrc={bodyBg} loop={true} />
+          <Navbar />
+          <PowerMenu />
+          <Routes>
+            <Route path='/' element={<App />} />
+            <Route path='/intro' element={<Intro />} />
+            <Route path='/activities' element={<Activities />} />
+            <Route path='/score' element={<Score />} />
+            <Route path='/graph' element={<Graph />} />
+            <Route path='/exit' element={<Exit />} />
+          </Routes>
+        </PowerMenuProvider>
+      </ScoreCardProvider>
     </BrowserRouter>
   </StrictMode>
 )

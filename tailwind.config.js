@@ -7,6 +7,8 @@ export default {
         mars: ['Mars', 'sans-serif'],
         automata: ['Automata', 'sans-serif'],
         batman: ['Batman', 'sans-serif'],
+        jersey: ['Jersey', 'sans-serif'],
+        crash: ['Crash', 'sans-serif'],
       },
     },
   },

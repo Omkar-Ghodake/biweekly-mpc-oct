@@ -346,6 +346,7 @@ export const CARDS_DATA = [
   {
     emp_id: '55093251',
     name: 'Vishnu Menon',
+    domain_name: 'Vishnu1.Menon',
     score_count: 72,
     image: 'images/Vishnu1.Menon.png',
     pre_score: 41,
@@ -359,6 +360,7 @@ export const CARDS_DATA = [
   {
     emp_id: '55093186',
     name: 'Anushree Shukla',
+    domain_name: 'Anushree1.Shukla',
     score_count: 58,
     image: 'images/Anushree1.Shuklaa.png',
     pre_score: 44,
@@ -372,6 +374,7 @@ export const CARDS_DATA = [
   {
     emp_id: '55093230',
     name: 'Anagha Shinde',
+    domain_name: 'Anagha.Shinde',
     score_count: 57,
     image: 'images/Anagha.Shinde.png',
     pre_score: 43,
@@ -385,6 +388,7 @@ export const CARDS_DATA = [
   {
     emp_id: '55087655',
     name: 'Dhiraj Kunder',
+    domain_name: 'Dhiraj.Kunder',
     score_count: 39,
     image: 'images/Dhiraj.Kunder.jpg',
     pre_score: 39,
@@ -398,6 +402,7 @@ export const CARDS_DATA = [
   {
     emp_id: '55099194',
     name: 'Bhavya Momaya',
+    domain_name: 'Bhavya.Momaya',
     score_count: 34,
     image: 'images/Bhavya.Momaya.jpg',
     pre_score: 79,
@@ -410,9 +415,10 @@ export const CARDS_DATA = [
   },
   {
     emp_id: '55087478',
-    name: 'Avinash Gupta',
+    name: 'Avinash10.Gupta',
+    domain_name: 'Avinash Gupta',
     score_count: 36,
-    image: 'images/Avinash.Gupta.jpg',
+    image: 'images/Avinash10.Gupta.jpg',
     pre_score: 50,
     prev_team: 'NA',
     courses: [
@@ -423,7 +429,8 @@ export const CARDS_DATA = [
   },
   {
     emp_id: '55093081',
-    name: 'Simran Surve',
+    name: 'Simran.Surve',
+    domain_name: 'Simran Surve',
     score_count: 32,
     image: 'images/Simran.Surve.jpg',
     pre_score: 77,
@@ -436,7 +443,8 @@ export const CARDS_DATA = [
   },
   {
     emp_id: '55099147',
-    name: 'Umakant Patil',
+    name: 'Umakant.Patil',
+    domain_name: 'Umakant Patil',
     score_count: 20,
     image: '/images/Umakant.jpg',
     pre_score: 0,
@@ -448,7 +456,8 @@ export const CARDS_DATA = [
   },
   {
     emp_id: '55099238',
-    name: 'Mridul Upadhya',
+    name: 'Mridul.Upadhya',
+    domain_name: 'Mridul Upadhya',
     score_count: 19,
     image: 'images/Mridul.Upadhya.jpg',
     pre_score: 0,
@@ -462,7 +471,8 @@ export const CARDS_DATA = [
   },
   {
     emp_id: '55099022',
-    name: 'Pratik Joshi',
+    name: 'Pratik5.Joshi',
+    domain_name: 'Pratik Joshi',
     score_count: 8,
     image: 'images/Pratik5.Joshi.jpg',
     pre_score: 0,
@@ -474,7 +484,8 @@ export const CARDS_DATA = [
   },
   {
     emp_id: '55099068',
-    name: 'Omkar Ghodake',
+    name: 'Omkar.Ghodake',
+    domain_name: 'Omkar Ghodake',
     score_count: 8,
     image: 'images/Omkar.Ghodake.jpg',
     pre_score: 0,
@@ -487,7 +498,8 @@ export const CARDS_DATA = [
   },
   {
     emp_id: '55099006',
-    name: 'Shubham Joshi',
+    name: 'Shubham2.Joshi',
+    domain_name: 'Shubham Joshi',
     score_count: 5,
     image: 'images/Shubham2.Joshi.jpg',
     pre_score: 0,
@@ -496,7 +508,8 @@ export const CARDS_DATA = [
   },
   {
     emp_id: '55093428',
-    name: 'Devraj Singh',
+    name: 'Devraj3.Singh',
+    domain_name: 'Devraj Singh',
     score_count: 3,
     image: 'images/Devraj3.Singh.png',
     pre_score: 0,
@@ -508,7 +521,8 @@ export const CARDS_DATA = [
   },
   {
     emp_id: '55099140',
-    name: 'Jaypal Koli',
+    name: 'Jaypal.Koli',
+    domain_name: 'Jaypal Koli',
     score_count: 3,
     image: 'images/Jaypal.Koli.jpg',
     pre_score: 0,
@@ -521,7 +535,8 @@ export const CARDS_DATA = [
   },
   {
     emp_id: '55093222',
-    name: 'Sanjeev Prajapati',
+    name: 'Sanjeev2.Prajapati',
+    domain_name: 'Sanjeev Prajapati',
     score_count: 3,
     image: 'images/Sanjeev2.Prajapati.png',
     pre_score: 0,
@@ -535,6 +550,7 @@ export const CARDS_DATA = [
   {
     emp_id: '55087415',
     name: 'Sakshi Rai',
+    domain_name: 'Sakshi1.Rai',
     score_count: 2,
     image: 'images/Sakshi1.Rai.jpg',
     pre_score: 0,
@@ -548,8 +564,9 @@ export const CARDS_DATA = [
   {
     emp_id: '55093439',
     name: 'Manoj Inbarajan',
+    domain_name: 'Manoj.Inbarajan',
     score_count: 0,
-    image: 'images/Manoj.Inbarajan_.jpg',
+    image: 'images/Manoj.Inbarajan.jpg',
     pre_score: 0,
     prev_team: 'Campaign Team',
     courses: [
@@ -561,6 +578,7 @@ export const CARDS_DATA = [
   {
     emp_id: '55099135',
     name: 'Nikita Sonawane',
+    domain_name: 'Nikita.Sonawane',
     score_count: 0,
     image: 'images/Nikita.Sonawane.jpg',
     pre_score: 0,
@@ -570,6 +588,7 @@ export const CARDS_DATA = [
   {
     emp_id: '55093276',
     name: 'Nikita Suhane',
+    domain_name: 'Nikita.Suhane',
     score_count: 0,
     image: 'images/Nikita.Suhane.png',
     pre_score: 0,
@@ -583,8 +602,9 @@ export const CARDS_DATA = [
   {
     emp_id: '55093373',
     name: 'Prathwikumar S',
+    domain_name: 'Prathwikumar.S',
     score_count: 0,
-    image: 'images/prathwikumar.s.JPG',
+    image: 'images/Prathwikumar.S.JPG',
     pre_score: 0,
     prev_team: 'JioMeet',
     courses: [
@@ -596,6 +616,7 @@ export const CARDS_DATA = [
   {
     emp_id: '55114802',
     name: 'Rishabh Kanaujiya',
+    domain_name: 'Rishabh.Kanaujiya',
     score_count: 0,
     image: 'images/Rishabh.Kanaujiya.png',
     pre_score: 0,
@@ -609,6 +630,7 @@ export const CARDS_DATA = [
   {
     emp_id: '55093464',
     name: 'Shriyash Thorat',
+    domain_name: 'Shriyash.Thorat',
     score_count: 0,
     image: 'images/Shriyash.Thorat.jpg',
     pre_score: 0,

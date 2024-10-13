@@ -24,7 +24,7 @@ const Cards = (props) => {
       case 1:
         return (
           <img
-            src='/images/Medals/gold.png'
+            src='/images/medals/gold.png'
             style={{ width: '50px' }}
             alt='Gold Medal'
             className='medal'
@@ -33,7 +33,7 @@ const Cards = (props) => {
       case 2:
         return (
           <img
-            src='/images/Medals/silver.png'
+            src='/images/medals/silver.png'
             style={{ width: '30px' }}
             alt='Silver Medal'
             className='medal'
@@ -42,7 +42,7 @@ const Cards = (props) => {
       case 3:
         return (
           <img
-            src='/images/Medals/bronze.png'
+            src='/images/medals/bronze.png'
             style={{ width: '28px' }}
             alt='Bronze Medal'
             className='medal'

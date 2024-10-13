@@ -8,10 +8,7 @@ import { PowerMenuContext } from '../context/PowerMenuProvider'
 const Navbar = () => {
   const { pathname } = useLocation()
 
-  const { showPowerMenu, setShowPowerMenu, togglePowerMenu } =
-    useContext(PowerMenuContext)
-
-  // const [isHamburgerActive, setIsHamburgerActive] = useState(false)
+  const { togglePowerMenu } = useContext(PowerMenuContext)
 
   const getActiveNavlinkPosition = () => {
     const length = 15
@@ -21,13 +18,6 @@ const Navbar = () => {
     if (pathname === '/score') return length * 2
     if (pathname === '/graph') return length * 3
   }
-
-  // const toggleHamburgerMenu = () =>
-  //   isHamburgerActive ? setIsHamburgerActive(false) : setIsHamburgerActive(true)
-
-  // useEffect(() => {
-  //   setCurrentPath(getPathnameIndex())
-  // }, [])
 
   const excludePath = ['/', '/intro', '/exit']
   return (
@@ -55,7 +45,7 @@ const Navbar = () => {
 
           <span
             className='flex justify-center items-center cursor-pointer hover:bg-blue-500/10 border border-blue-500/20 w-12 h-12 p-2 rounded-full duration-300'
-            onClick={togglePowerMenu}
+            onClick={() => togglePowerMenu('open')}
           >
             <IoPower />
           </span>
