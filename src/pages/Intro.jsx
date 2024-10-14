@@ -49,7 +49,7 @@ const Intro = () => {
           {/* <span className='text-center text-2xl text-sky-400'>
             The MP Seva Tracker
           </span> */}
-          <TypeTextAnimate text={'Bi-Weekly : 08 October, 2024'} />
+          <TypeTextAnimate text={'Bi-Weekly : 15 October, 2024'} />
         </div>
 
         <motion.div

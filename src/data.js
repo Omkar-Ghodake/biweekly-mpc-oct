@@ -456,8 +456,8 @@ export const CARDS_DATA = [
   },
   {
     emp_id: '55099238',
-    name: 'Mridul.Upadhya',
-    domain_name: 'Mridul Upadhya',
+    name: 'Mridul Upadhya',
+    domain_name: 'Mridul.Upadhya',
     score_count: 19,
     image: 'images/Mridul.Upadhya.jpg',
     pre_score: 0,
@@ -635,6 +635,10 @@ export const CARDS_DATA = [
     image: 'images/Shriyash.Thorat.jpg',
     pre_score: 0,
     prev_team: 'JCPC',
-    courses: [],
+    courses: [
+      '1. MERN Stack Development',
+      '2. Figma for UX Design',
+      '3. Programming Foundation Algorithms',
+    ],
   },
 ]

@@ -7,6 +7,17 @@ const ScoreCard = ({ index, emp_id, name, score_count, image }) => {
   const { setSelectedScoreCard, toggleScoreCardModal } =
     useContext(ScoreCardContext)
 
+  const getMedal = () => {
+    switch (index) {
+      case '0':
+        return 'gold'
+      case '1':
+        return 'silver'
+      case '2':
+        return 'bronze'
+    }
+  }
+
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
@@ -22,7 +33,11 @@ const ScoreCard = ({ index, emp_id, name, score_count, image }) => {
         <div className='badge'></div>
 
         <div className='emp-id absolute inset-0 h-fit ml-auto tracking-widest underline-offset-8 text-[#E3F5E1] w-full flex justify-between items-center p-2'>
-          <span>#{addLeadingZeros(parseInt(index) + 1, 2)}</span>
+          {parseInt(index) > 2 ? (
+            <span>#{addLeadingZeros(parseInt(index) + 1, 2)}</span>
+          ) : (
+            <img src={`/images/medals/${getMedal()}.png`} className='w-6' />
+          )}
           <span>{emp_id}</span>
         </div>
 
