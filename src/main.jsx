@@ -20,6 +20,7 @@ import Intro from './pages/Intro.jsx'
 // import Score from './pages/Score.jsx'
 import Score from './pages/ScoreNew.jsx'
 import ScoreCardProvider from './context/ScoreCardProvider.jsx'
+import BlackScreen from './pages/BlackScreen.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -36,6 +37,7 @@ createRoot(document.getElementById('root')).render(
             <Route path='/score' element={<Score />} />
             <Route path='/graph' element={<Graph />} />
             <Route path='/exit' element={<Exit />} />
+            <Route path='/black' element={<BlackScreen />} />
           </Routes>
         </PowerMenuProvider>
       </ScoreCardProvider>

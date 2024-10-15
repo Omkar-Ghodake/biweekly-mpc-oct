@@ -7,10 +7,14 @@ import { TABLE_DATA } from '../data'
 
 const Graph = () => {
   return (
-    <div className='pt-10'>
+    <div className=''>
       <BgVideo videoSrc={bgVideo} loop={true} />
-      <GrowingLineGraph />
-      <TableComponent data={TABLE_DATA} />
+      <div className='h-[100vh] pt-[13vh] flex justify-center items-center mb-6'>
+        <GrowingLineGraph />
+      </div>
+      <div className='min-h-[100vh] flex justify-center items-center  mt-12'>
+        <TableComponent data={TABLE_DATA} />
+      </div>
     </div>
   )
 }

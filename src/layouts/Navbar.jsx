@@ -19,7 +19,7 @@ const Navbar = () => {
     if (pathname === '/graph') return length * 3
   }
 
-  const excludePath = ['/', '/intro', '/exit']
+  const excludePath = ['/', '/intro', '/exit', '/black']
   return (
     <>
       {!excludePath.includes(pathname) && (

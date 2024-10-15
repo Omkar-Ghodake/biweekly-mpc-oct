@@ -9,10 +9,10 @@ const TableComponent = ({ data }) => {
   const columns = Object.keys(data[0])
 
   return (
-    <div className='relative overflow-x-auto shadow-md sm:rounded-lg font-automata my-16'>
+    <div className='relative overflow-x-auto shadow-md sm:rounded-lg font-automata mb-16'>
       <h1 className='text-white text-center text-2xl mb-5'>MPC Score Count</h1>
       <table className='w-min mx-auto text-base text-gray-500 dark:text-white'>
-        <thead className='text-xs text-gray-700 uppercase  dark:bg-sky-500/50 backdrop-blur-sm dark:text-white '>
+        <thead className='text-xs text-gray-700 uppercase dark:bg-sky-500/50 backdrop-blur-sm dark:text-white '>
           <tr>
             {columns.map((col, index) => (
               <th key={index} className='text-base px-6 py-3'>
