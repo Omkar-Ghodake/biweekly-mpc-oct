@@ -60,11 +60,27 @@ const options = {
   scales: {
     y: {
       beginAtZero: true,
+      title: {
+        display: true,
+        text: 'Count', // Y-axis label
+        color: 'rgba(255, 255, 255)', // Y-axis label color
+        font: {
+          size: 16, // Y-axis label font size
+        },
+      },
       ticks: {
         color: 'rgba(255, 255, 255)', // Change Y-axis text color
       },
     },
     x: {
+      title: {
+        display: true,
+        text: 'Severity', // X-axis label
+        color: 'rgba(255, 255, 255)', // X-axis label color
+        font: {
+          size: 16, // X-axis label font size
+        },
+      },
       ticks: {
         color: 'rgba(255, 255, 255)', // Change X-axis text color
       },
